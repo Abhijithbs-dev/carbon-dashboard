@@ -1,10 +1,11 @@
 # 🍃 CarbonDash - Carbon Footprint Dashboard
 
-CarbonDash is a sleek, premium, and modern React dashboard designed to help users track, simulate, and reduce their carbon footprint. Featuring a glassmorphic aesthetic, the application provides real-time calculations, interactive visualizations, scenario planning, and activity feeds.
+## 📝 Project Description
+CarbonDash is a sleek, premium, and modern React dashboard designed to help users track, simulate, and reduce their carbon footprint. Featuring a glassmorphic aesthetic, the application provides real-time calculations, interactive visualizations, scenario planning, and activity feeds. It allows users to simulate lifestyle changes in real time and immediately see the corresponding impact on their annual carbon footprint.
 
 ---
 
-## 🌟 Key Features
+## 🌟 Feature List
 
 - **⚡ Live Sandbox Simulator**: Interactive range controls to adjust daily and weekly habits (Car travel, meat consumption, home energy tier, and annual flights) and see the instant recalculation of your annual carbon emissions against a set target of **8.0 Metric Tons CO2/year**.
 - **📊 Interactive Emissions Breakdown**: A clean, customized Recharts donut chart with smooth hover animations and a customized tooltip breaking down your emissions by category:
@@ -18,67 +19,31 @@ CarbonDash is a sleek, premium, and modern React dashboard designed to help user
 
 ---
 
-## 🛠️ Tech Stack
-
-- **Frontend Framework**: [React 18](https://react.dev/)
-- **Build Tool**: [Vite](https://vitejs.dev/)
-- **Charts & Visualizations**: [Recharts](https://recharts.org/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Styling**: Custom CSS with Glassmorphism variables (defined in [index.css](file:///c:/Users/abhij/.gemini/antigravity/scratch/carbon-dashboard/src/index.css))
-
----
-
-## 📂 Project Structure
-
-```
-carbon-dashboard/
-├── dist/                   # Production build outputs
-├── src/
-│   ├── components/
-│   │   ├── ActionHub.jsx          # Actions toggle and points system
-│   │   ├── EmissionsChart.jsx     # Recharts Pie/Donut breakdown of emissions
-│   │   ├── SandboxSimulator.jsx   # Habit sliders and target calculation
-│   │   └── TransactionFeed.jsx    # Recent transactions and carbon impact
-│   ├── App.jsx             # Main dashboard assembly and state calculations
-│   ├── index.css           # Glassmorphism design tokens & styles
-│   └── main.jsx            # React application mount point
-├── index.html              # Main HTML entry point
-├── package.json            # Scripts & project dependencies
-└── vite.config.js          # Vite React plugin configuration
-```
-
----
-
-## 🚀 Getting Started
+## 🚀 Setup Instructions
 
 ### Prerequisites
-
-Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+Make sure you have [Node.js](https://nodejs.org/) (v16 or higher recommended) installed on your machine.
 
 ### Installation
-
-1. Navigate to the project directory:
+1. Clone or navigate to the project directory:
    ```bash
    cd carbon-dashboard
    ```
 
-2. Install dependencies:
+2. Install all required dependencies:
    ```bash
    npm install
    ```
 
-### Running Locally
-
-To launch the development server:
+### Development Server
+To launch the local development server:
 ```bash
 npm run dev
 ```
+Once started, open [http://localhost:5173](http://localhost:5173) in your browser.
 
-The application will run locally, usually at `http://localhost:5173`.
-
-### Building for Production
-
-To build optimized production assets in the `dist` folder:
+### Production Build
+To compile and build optimized assets for production:
 ```bash
 npm run build
 ```
